@@ -108,6 +108,57 @@ header {
     width: 15px;
 }
 
+/*Formulario*/
+
+.contato .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.formulario {
+    width: 45%;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario p {
+    height: 15px;
+    margin: 10px 0 5px;
+}
+
+.formulario input,
+.formulario select {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.formulario button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+
 /*Rodapé*/
 
 .rodape{
