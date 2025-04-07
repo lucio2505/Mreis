@@ -20,3 +20,8 @@ window.addEventListener('scroll', checkMovementOnScroll);
 
 // Chama a função ao carregar a página para elementos que já estão visíveis
 checkMovementOnScroll();
+
+$(document).ready(function() {
+    $('#telefone').mask('(00) 00000-0000');
+  });
+  
