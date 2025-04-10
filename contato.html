@@ -40,21 +40,22 @@
         <div class="container">
             <div class="formulario">
                 <fieldset>
-                    <form>
+                   <!--Tutorial pro formulario funcionar: https://www.youtube.com/watch?v=os7TDvp2XQ4--> 
+                    <form action="https://formsubmit.co/fotografiareism@gmail.com" method="POST">
                         <p>Digite seu nome:</p>
-                        <input type="text" name="nome">
+                        <input type="text" name="name" required>
                         
                         <p>Digite seu email:</p>
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
                         
                         <p>Digite seu telefone:</p>
-                        <input type="text" id="telefone" placeholder="(00) 00000-0000">
+                        <input type="text" id="telefone" placeholder="(00) 00000-0000" required>
                         
                         <p>Selecione um serviço:</p>
-                        <select>
-                            <option value="ensaio">Ensaio fotográfico</option>
-                            <option value="corp">Corporativo</option>
-                            <option value="aniv">Aniversário infantil</option>
+                        <select name="message" id="message" required>
+                            <option value="Ensaio fotográfico">Ensaio fotográfico</option>
+                            <option value="Corporativo">Corporativo</option>
+                            <option value="Aniversário_infantil">Aniversário infantil</option>
                         </select>
                         
                         <button type="submit">Enviar</button>
