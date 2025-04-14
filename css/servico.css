@@ -107,6 +107,22 @@ header {
     width: 15px;
 }
 
+/*Servio*/
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px; /* opcional: dá um espaço abaixo se quiser */
+}
+
+.titulo h1 {
+    margin-bottom: 10px; /* opcional: separa o h1 do h3 */
+    color: #333333;
+}
+
+.titulo h3 {
+    color: #333333;
+}
+
 /*Rodapé*/
 
 .rodape{
