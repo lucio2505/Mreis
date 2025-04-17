@@ -21,7 +21,7 @@ body{
 header {
     background-color:rgb(8, 8, 8);
     grid-template-columns: auto 1fr auto;
-    width: 100%;
+    width: 96.9%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,18 +110,76 @@ header {
 /*Servio*/
 
 .titulo {
+    margin-top: 35px;
     text-align: center;
-    margin-bottom: 20px; /* opcional: dá um espaço abaixo se quiser */
+    margin-bottom: 50px; /* opcional: dá um espaço abaixo se quiser */
 }
 
 .titulo h1 {
-    margin-bottom: 10px; /* opcional: separa o h1 do h3 */
+    margin-bottom: 5px; /* opcional: separa o h1 do h3 */
     color: #333333;
+    text-decoration: underline;
 }
 
 .titulo h3 {
     color: #333333;
+    text-decoration: underline;
+    
 }
+
+.container-slider {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.servico{
+    margin-left: 99px;
+    background-color: rgb(152, 148, 148);
+    border-radius: 20px;
+    width: 80%;
+    margin-bottom: 2%;
+    padding-top: 10px;
+    padding-left: 73px;
+    padding-bottom: 10px;
+}
+
+.slider{
+    width: 97%;
+    height: 100%;  /* Garante que a altura da imagem será igual à altura definida para o contêiner */
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.on{
+    opacity: 1;
+}
+
+
+.container-imagem {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 10px; /* Espaço entre as imagens, opcional */
+    margin-top: 10px; /* Espaço entre o parágrafo e as imagens */
+    margin-bottom: 10px; /* Espaço antes do botão */
+    
+}
+
+.container-imagem img{
+    width: 15%; 
+}
+
+.servico button{
+    display: block;
+    margin-left: auto;
+    margin-right: 20px; /* opcional, só pra não grudar na borda */
+    padding: 9px 10px;
+    color: lightgray;
+    background-color: dimgray;
+    border: 2px solid dimgray;
+    border-radius: 17px;
+}
+
 
 /*Rodapé*/
 
