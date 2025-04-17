@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mreis.fotografia</title>
+    <link rel="website icon" type="jpg" href="img/logosite.jpg" >
+    <link rel="stylesheet" href="./css/contato.css">
+    <script src="./js/contato.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+</head>
+<body>
+    <header class="move-element">
+        <img src="img/logo.png" alt="Logo do Meu Site" href="./index.html" class="logo">
+    </header>
+    <div class="menu move-element">
+        <nav class="botoes">
+            <ul>
+                <li><a class="btn-hover" href="./index.html">Home</a></li>
+                <li><a class="btn-hover" href="./servico.html">Serviços</a></li>
+                <li><a class="btn-hover" href="./quemsou.html">Quem sou</a></li>
+                <li><a class="btn-hover" href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <nav class="redes">
+            <ul>
+                <li><p>fotografiareism@gmail.com</p></li>
+                <li><a href="https://wa.me/5511969548619" target="_blank"><img src="img/logozap.png" alt="instagram"></a></li>
+                <li><a href="https://www.instagram.com/mreis.fotografia" target="_blank"><img src="img/logoinsta.jpg" alt="instagram"></a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <h1>Entre em contato conosco</h1>
+
+    <section class="contato">
+        <div class="container">
+            <div class="formulario">
+                <fieldset>
+                   <!--Tutorial pro formulario funcionar: https://www.youtube.com/watch?v=os7TDvp2XQ4--> 
+                    <form action="https://formsubmit.co/ajax/fotografiareism@gmail.com" method="POST">
+                        <p>Digite seu nome:</p>
+                        <input type="text" name="name" required>
+                        
+                        <p>Digite seu email:</p>
+                        <input type="email" name="email" required>
+                        
+                        <p>Digite seu telefone:</p>
+                        <input type="text" id="telefone" placeholder="(00) 00000-0000" required>
+                        
+                        <p>Selecione um serviço:</p>
+                        <select name="message" id="message" required>
+                            <option value="Ensaio fotográfico">Ensaio fotográfico</option>
+                            <option value="Corporativo">Corporativo</option>
+                            <option value="Aniversário_infantil">Aniversário infantil</option>
+                        </select>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+                </fieldset>
+            </div>
+            
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.39586770936!2d-46.924976233907365!3d-23.681434523666315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1743118448979!5m2!1spt-BR!2sbr">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="rodape">
+        <ul>
+            <li href="./index.html">
+                <img src="./img/logo.png" alt="logo site" href="./index.html" >
+            </li>
+        </ul>
+        <ul>
+            <li class="meio">
+                <p>Telefone para contato: (11) 969548619</p>
+                <p>Todos os direitos reservados</p>
+            </li>
+        </ul>
+        <ul class="direita">
+            <li><p>Desenvolvido por: Lucio Junior</p></li>
+        </ul>
+    </footer>
+</body>
+</html>
