@@ -23,60 +23,20 @@ checkMovementOnScroll();
 
 
 //CARROSSEL//
-const slider = document.querySelectorAll('.slider');
-const btnPrev = document.getElementById('prev-button');
-const btnNext = document.getElementById('next-button');
+    const carrosseis = document.querySelectorAll('.carrosel-conteiner');
 
-let currentSlide = 0;
+        carrosseis.forEach(container => {
+    const images = container.querySelectorAll('img');
+    const imgWidth = 152 + 10; // largura da imagem + gap
+    let index = 0;
 
-function hideSlider(){
-    slider.forEach(item => item.classList.remove('on'))
-}
-
-function showSlider(){
-    slider[currentSlide].classList.add('on')
-}
-
-function nextSlider() {
-    hideSlider()
-    if(currentSlide == slider.length -1) {
-        currentSlide = 0
-    }else{
-        currentSlide++
-    }
-    showSlider()
-}
-
-function prevSlider() {
-    hideSlider()
-    if(currentSlide == 0) {
-        currentSlide = slider.length -1
-    }else{
-        currentSlide--
-    }
-    showSlider()
-}
-
-btnNext.addEventListener('click', nextSlider)
-btnPrev.addEventListener('click', prevSlider)
-
-setInterval(nextSlider, 6000);
-
-console.log(slider)
-
-const moveElementsslider = document.querySelectorAll('.move-on-scroll');
-
-function moveOnScroll() {
-    moveElementsslider.forEach((element) => {
-        const position = element.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.2;
-
-        if (position < screenPosition) {
-            element.classList.add('move');
+    function moveCarrosel() {
+        index++;
+        if (index > images.length - 5) {
+            index = 0;
         }
+        container.style.transform = `translateX(-${index * imgWidth}px)`;
+    }
+
+    setInterval(moveCarrosel, 3000);
     });
-}
-
-window.addEventListener('scroll', moveOnScroll);
-
-moveOnScroll();

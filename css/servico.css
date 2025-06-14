@@ -109,76 +109,79 @@ header {
 
 /*Servio*/
 
-.titulo {
-    margin-top: 35px;
-    text-align: center;
-    margin-bottom: 50px; /* opcional: dá um espaço abaixo se quiser */
-}
-
-.titulo h1 {
-    margin-bottom: 5px; /* opcional: separa o h1 do h3 */
-    color: #333333;
-    text-decoration: underline;
-}
-
-.titulo h3 {
-    color: #333333;
-    text-decoration: underline;
-    
-}
-
-.container-slider {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.servico{
-    margin-left: 99px;
-    background-color: rgb(152, 148, 148);
-    border-radius: 20px;
-    width: 80%;
-    margin-bottom: 2%;
-    padding-top: 10px;
-    padding-left: 73px;
-    padding-bottom: 10px;
-}
-
-.slider{
-    width: 97%;
-    height: 100%;  /* Garante que a altura da imagem será igual à altura definida para o contêiner */
-    border-radius: 10px;
-    opacity: 0;
-    transition: opacity .2s;
-}
-
-.on{
-    opacity: 1;
-}
-
-
-.container-imagem {
+/* Centralizar o bloco geral */
+.servico {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    gap: 10px; /* Espaço entre as imagens, opcional */
-    margin-top: 10px; /* Espaço entre o parágrafo e as imagens */
-    margin-bottom: 10px; /* Espaço antes do botão */
-    
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgb(152, 148, 148);
 }
 
-.container-imagem img{
-    width: 15%; 
+/* Título à esquerda */
+.servico h2 {
+    margin: 0;
+    font-size: 21px;
+    text-align: left;
+    color: #ece8e8;
 }
 
-.servico button{
-    display: block;
-    margin-left: auto;
-    margin-right: 20px; /* opcional, só pra não grudar na borda */
-    padding: 9px 10px;
-    color: lightgray;
+/* Texto abaixo do título */
+.servico p {
+    margin: 0;
+    font-size: 13px;
+    color: #ece8e8;
+}
+
+.carrosel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Carrossel com imagens lado a lado */
+.carrosel .conteiner {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+/* Estilizar imagens */
+.carrosel img {
+    width: 19%;
+    max-width: 152px;
+    height: 111px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* Botão alinhado à direita na parte inferior */
+.botao-contato {
+    display: inline-block;
+    padding: 8px 34px;
     background-color: dimgray;
-    border: 2px solid dimgray;
-    border-radius: 17px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 74%;
 }
+
+.botao-contato:hover {
+    background-color: #3b3b3b;
+}
+
 
 
 /*Rodapé*/

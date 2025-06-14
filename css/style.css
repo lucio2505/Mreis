@@ -22,7 +22,6 @@ body{
 
 header {
     background-color:rgb(8, 8, 8);
-    grid-template-columns: auto 1fr auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -212,6 +211,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 2%;
+    color: #333333;
 }
 
 .zoom-effect {
@@ -234,6 +234,7 @@ header {
 .avaliacoes h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #333333;
 }
 
 .lista-avaliacoes {
@@ -245,7 +246,7 @@ header {
 }
 
 .avaliacao {
-    background: #f9f9f9;
+    background: rgb(207, 200, 200);
     padding: 20px;
     border-radius: 10px;
     width: 250px;
@@ -319,4 +320,56 @@ header {
 /* Aplica a visibilidade ao elemento quando ele entra na tela */
 .fade-in.visible {
     opacity: 1;
+}
+
+/* Responsividade para telas menores que 768px */
+@media screen and (max-width: 768px) {
+
+    /*Cabeçalho*/
+    .logo{
+        margin-right: 32%;
+    }
+
+    .botoes{
+        margin-top: 0px;
+        margin-right: 11%;
+    }
+
+    .botoes ul {
+      margin-left: -9%;
+      gap: 10px  
+    }
+
+    .botoes ul li a {
+        font-size: 77%;
+    }
+    /*FIM CABEÇALHO*/
+
+    /*CARROSEL*/
+
+    .container-slider{
+        display: none;
+    }
+
+    /*FIM CARROSSEL*/
+
+    /*SERVIÇOS*/
+    .servicos h2{
+        width: 75%;
+    }
+
+    .servicos ul {
+        display: block;
+        margin-left: 22%;
+
+    }
+
+    .servicos a{
+        gap: 3%;
+        margin-bottom: 10%;
+    }
+
+    .avaliacoes{
+        display: none;
+    }
 }
