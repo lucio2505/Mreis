@@ -1,69 +1,63 @@
-body{
-    background-color:rgb(214, 208, 208) ;
-    margin: 0px;
-    padding: 0px;
+body {
+    background-color: rgb(214, 208, 208);
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
 }
 
 .move-element {
     opacity: 0;
-    transform: translateY(100px); /* Inicia fora da tela (à esquerda) */
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Animações suaves */
+    transform: translateY(6.25rem);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-/* Estilo quando o elemento se torna visível na tela */
 .move-element.visible {
     opacity: 1;
-    transform: translateX(0); /* Move para a posição original */
+    transform: translateX(0);
 }
 
 header {
-    background-color:rgb(8, 8, 8);
+    background-color: rgb(8, 8, 8);
     grid-template-columns: auto 1fr auto;
     width: 96.9%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
-/* A imagem já ficará na primeira coluna (esquerda) */
 .logo {
     display: flex;
-    width: 320px;
-    margin-right: 30px;
-    margin-bottom: 2px;
+    width: 20rem;
     align-items: center;
-    padding: 2px;
 }
 
-.menu{
-    background-color:rgb(152, 148, 148);
+.menu {
+    background-color: rgb(152, 148, 148);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0;  /* Remove qualquer margem inferior do menu */
-    padding-bottom: 0; /* Remove qualquer padding inferior do menu */
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .botoes {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
 }
 
 .botoes ul {
     display: flex;
-    list-style: none; /* remove as bolinhas */
-    margin-left: 50px;
-    padding: 0;
-    gap: 15px; /* espaçamento entre os itens, opcional */
-    align-items: center; /* alinha verticalmente se necessário */
-    border-radius: 25px; /* Borda arredondada */
-    padding: 10px 20px; /* Espaçamento interno */
+    list-style: none;
+    padding: 0.625rem 1.25rem;
+    gap: 0.9375rem;
+    align-items: center;
+    border-radius: 1.5625rem;
+    padding-left: 3rem
 }
 
 .btn-hover:hover {
-    background-color: #3b3b3b; /* Cor que aparece quando o mouse passar por cima */
+    background-color: #3b3b3b;
 }
 
 .botoes ul li a {
@@ -71,27 +65,26 @@ header {
     background-color: dimgrey;
     color: white;
     font-weight: bold;
-    font-size: 16px;
-    padding: 8px 10px; /* Aumenta o tamanho do botão */
-    border-radius: 25px; /* Deixa o botão arredondado */
-    border: 4px; /* Aqui aumenta a borda */
+    font-size: 1rem;
+    ;
+    padding: 0.5rem 0.625rem;
+    border-radius: 1.5625rem;
+    border: 0.25rem;
     transition: background-color 0.3s ease;
 }
 
-.redes{
-    width: 10px;
-    list-style: none; /* remove as bolinhas */
-    padding-left: 10px;
-
+.redes {
+    width: 0.625rem;
+    list-style: none;
+    padding-left: 0.625rem;
 }
 
 .redes ul {
     list-style: none;
     padding-left: 0;
-    display: flex; /* Alinha os itens em linha */
-    align-items: center; /* Alinha verticalmente */
-    gap: 15px; /* Espaço entre os elementos */
-
+    display: flex;
+    align-items: center;
+    gap: 0.9375rem;
 }
 
 .redes li {
@@ -100,42 +93,39 @@ header {
 }
 
 .redes p {
-    padding-left: 95px;
+    padding-left: 5.9375rem;
 }
 
-.redes img{
-    width: 15px;
+.redes img {
+    width: 0.9375rem;
 }
 
-/*Servio*/
+/* SERVIÇO */
 
-/* Centralizar o bloco geral */
 .servico {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 50rem;
+    margin: 2.5rem auto;
+    padding: 1.25rem;
+    border: 0.125rem solid #ccc;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
     background-color: rgb(152, 148, 148);
 }
 
-/* Título à esquerda */
 .servico h2 {
     margin: 0;
-    font-size: 21px;
+    font-size: 1.3125rem;
     text-align: left;
     color: #ece8e8;
 }
 
-/* Texto abaixo do título */
 .servico p {
     margin: 0;
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #ece8e8;
 }
 
@@ -145,34 +135,31 @@ header {
     position: relative;
 }
 
-/* Carrossel com imagens lado a lado */
 .carrosel .conteiner {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     transition: transform 0.5s ease-in-out;
     will-change: transform;
 }
 
-/* Estilizar imagens */
 .carrosel img {
     width: 19%;
-    max-width: 152px;
-    height: 111px;
+    max-width: 9.5rem;
+    height: 6.9375rem;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     flex-shrink: 0;
 }
 
-/* Botão alinhado à direita na parte inferior */
 .botao-contato {
     display: inline-block;
-    padding: 8px 34px;
+    padding: 0.5rem 2.125rem;
     background-color: dimgray;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 0.75rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 74%;
@@ -182,16 +169,13 @@ header {
     background-color: #3b3b3b;
 }
 
+/* RODAPÉ */
 
-
-/*Rodapé*/
-
-.rodape{
+.rodape {
     background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .rodape ul {
@@ -199,24 +183,24 @@ header {
     display: flex;
 }
 
-.meio{
-    padding-left: 80px;
-    padding-right: 80px;
+.meio {
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
-.direita{
-    padding-right: 30px;
+.direita {
+    padding-right: 1.875rem;
 }
 
-.rodape ul li img{
+.rodape ul li img {
     display: flex;
-    width: 170px;
-    margin-right: 30px;
-    margin-bottom: 2px;
-    padding: 2px;
+    width: 10.625rem;
+    margin-right: 1.875rem;
+    margin-bottom: 0.125rem;
+    padding: 0.125rem;
 }
 
-.rodape ul li p{
-    font-size: 11px;
+.rodape ul li p {
+    font-size: 0.6875rem;
     color: #333;
 }
